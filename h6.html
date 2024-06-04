@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function disp_prompt(){
+                var name = prompt("Please enter your name","")
+                if (name != null && name != ""){
+                    document.write("Hi "+ name +"! Jangan lupa terseyum ya ")
+                    
+                }
+            }
+
+        </script>
+    </head>
+
+
+    <body>
+
+<h1>Welcome</h1>
+
+
+       
+        </form>
+
+        <input type="button"
+        onclick="alert('saya adalah manusia')"
+         value="siapa saya ?">
+
+
+         <br></br> <input type="button"
+        onclick="confirm('ini adalah tugas mandiri  sintax.klik ok atau klik cancel untuk menghilangkan notif ini')"
+         value="apa ini ?">
+
+
+<br></br>
+<form action="#" method="post" onsubmit="return validasi ()">
+    <label class="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" size="30"><br><br>
+    <label class="email">email:</label>
+    <input type="text" id="email" name="email" placeholder="Masukkan email Anda" size="30"><br><br>
+    <input type="submit" value="kirim">
+</form>
+
+
+<script>
+    function validasi(){
+    var nama = document.getElementById("nama").value;
+    var email = document.getElementById("email").value;
+
+    if (nama == ""){
+        alert("Nama harus diisi!");
+        return false;
+    }
+
+    if (email == ""){
+        alert("email harus diisi!");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+<form>
+    <br><br>
+    <input type="button"
+     onclick="disp_prompt()"
+      value="Kata-kata hari ini">
+      
+
+
+</html>
